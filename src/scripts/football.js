@@ -17,10 +17,13 @@ function playAudio(name) {
 }
 
 function playLoopedAudio(name) {
+    let crowdButton = document.getElementById('crowdtoggle');
     if (crowdSound.playing()) {
         crowdSound.stop()
+        crowdButton.innerText = 'Crowd On';
     }
     else {
         crowdSound.play()
+        crowdButton.innerText = 'Crowd Off';
     }
 }

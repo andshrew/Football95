@@ -11,29 +11,57 @@
   </div>
   <div class="w3-row w3-black">
     <div class="w3-col w3-container" style="width:10%"><p></p></div>
-    <div class="w3-col w3-black w3-container" style="width:80%">
+    <div class="w3-col w3-black w3-container w3-hide-large w3-hide-medium" style="width:80%">
       <p>
-        <img src="img/Football95_009.png" class="w3-round-xxlarge" alt="Car" style="width: 100%;">
+        <img src="img/Football95_009.png" class="w3-round-xxlarge" alt="Football Pitch" style="width: 100%;">
+      </p>
+    </div>
+    <div class="w3-col w3-black w3-container w3-center w3-hide-large w3-hide-small" style="width:80%">
+      <p>
+        <img src="img/Football95_009.png" class="w3-round-xxlarge" alt="Football Pitch" style="width: 70%;">
+      </p>
+    </div>
+    <div class="w3-col w3-black w3-container w3-center w3-hide-small w3-hide-medium" style="width:80%">
+      <p>
+        <img src="img/Football95_009.png" class="w3-round-xxlarge" alt="Football Pitch" style="width: 80%;">
       </p>
     </div>
     <div class="w3-col w3-container" style="width:10%"><p></p></div>
   </div>
-  <center>
+  <div class="w3-container w3-center w3-hide-small">
     <div class="w3-row w3-black">
-      <div class="w3-col w3-container" style="width:10%"><p></p></div>
-      <div class="w3-col w3-black w3-container" style="width:80%">
+      <div class="w3-col w3-black w3-container">
         <p>
           <div class="w3-bar">
-            <button class="w3-button w3-white w3-round-large" onclick="playAudio('goal')"">Goal</button>
-            <button class="w3-button w3-red w3-round-large" onclick="playAudio('firework')">Fireworks</button>
-            <button class="w3-button w3-blue w3-round-large" onclick="playLoopedAudio('crowd')">Crowd</button>
-            
+            <button class="w3-button w3-white w3-round-large" onclick="playAudio('goal')" style="width:110px">Goal</button>
+            <button class="w3-button w3-red w3-round-large" onclick="playAudio('firework')" style="width:110px">Fireworks</button>
+            <button id="crowdtoggle" class="w3-button w3-blue w3-round-large" onclick="playLoopedAudio('crowd')" style="width:110px">Crowd On</button>
           </div>
         </p>
       </div>
-      <div class="w3-col w3-container" style="width:10%"><p></p></div>
     </div>
-  </center>
+  </div>
+  <div class="w3-container w3-center w3-hide-medium w3-hide-large">
+    <div class="w3-row w3-black">
+      <div class="w3-col w3-black w3-container">
+        <p>
+          <div class="w3-bar">
+            <button class="w3-button w3-white w3-round-large" onclick="playAudio('goal')" style="width:110px">Goal</button>
+            <button class="w3-button w3-red w3-round-large" onclick="playAudio('firework')" style="width:110px">Fireworks</button>
+          </div>
+        </p>
+      </div>
+    </div>
+    <div class="w3-row w3-black">
+      <div class="w3-col w3-black w3-container">
+        <p>
+          <div class="w3-bar">
+            <button id="crowdtoggle" class="w3-button w3-blue w3-round-large" onclick="playLoopedAudio('crowd')" style="width:110px">Crowd On</button>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
   <audio id="firework" src="assets/firework.ogg"></audio>
   <audio id="goal" src="assets/goal.ogg"></audio>
 </body>
